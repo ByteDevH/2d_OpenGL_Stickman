@@ -132,8 +132,6 @@ void triangles(int x, int y, int x1, int y1, int x2, int y2) {
 	glEnd();
 }
 
-
-
 void rectangle(int x, int y, int w, int h) {
 	glBegin(GL_POLYGON);
 	glVertex2i(x, y);
@@ -877,7 +875,8 @@ void display10() {
 	glFlush();
 	glutSwapBuffers();
 }
-//scene 5 (danny)
+
+//scene 5
 void display11() {
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 	glColor3ub(162, 162, 208); //color of the sky
@@ -967,7 +966,7 @@ void display11() {
 	glutSwapBuffers();
 }
 
-//scene 6 (danny)
+//scene 6 
 void display12() {
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
@@ -1018,7 +1017,7 @@ void display12() {
 }
 
 
-//scene 7 (ali)
+//scene 7 
 void display13() {
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
@@ -1063,7 +1062,7 @@ void display13() {
 	glutSwapBuffers();
 }
 
-//scene 8 (ali)
+//scene 8 
 void display14() {
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
@@ -1095,7 +1094,7 @@ void display14() {
 	glutSwapBuffers();
 }
 
-//scene9 (blase)
+//scene9 
 void display15() {
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 	rectangle(0, 200, 700, 700); //size of the background
