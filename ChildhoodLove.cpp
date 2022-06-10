@@ -18,7 +18,6 @@ int counter = 0;
 time_t t;
 float rotationAngle = 0;
 
-
 struct drop {
 	float x = 400;
 	float y = 400;
@@ -905,7 +904,6 @@ void display11() {
 	person(25, 80, 170, 9);
 	person(25, 100, 170, 9);
 
-
 	//front wall;
 	frontwall();
 	//door
@@ -922,10 +920,8 @@ void display11() {
 	//tree
 	glColor3ub(139, 69, 19);
 	rectangle(525, 120, 50, 200);//tree bark
-
 	glColor3ub(0, 128, 0);
 	person(10, 550, 450, 180);//tree leaves
-
 
 	//grass 2
 	triangles(470, 120, 470, 200, 500, 120);
@@ -960,8 +956,6 @@ void display11() {
 	straight_lines(80, 30, 100, 80);//left leg
 	straight_lines(100, 80, 120, 30);//right leg
 
-
-
 	glFlush();
 	glutSwapBuffers();
 }
@@ -970,17 +964,18 @@ void display11() {
 void display12() {
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
-
 	glColor3ub(204, 255, 255);//color
 	rectangle(0, 0, 700, 700);//background size
 	land();
 	land2();
 	moving_cloud();
+	
 	//tree
 	glColor3ub(139, 69, 19);
 	rectangle(350, 170, 110, 300);//tree bark
 	tree_element();
 	tree_elements();
+	
 	//tree leaves
 	glColor3ub(0, 128, 0);
 	person(20, 400, 530, 150);//tree leaves
@@ -1046,8 +1041,6 @@ void display13() {
 	glColor3ub(112, 128, 144);
 	rectangle(630, 0, 140, 550);//building 4
 
-
-
 	glColor3ub(255, 105, 180);
 	person(25, 85 + walk, 200, 50);//h
 	straight_lines(50 + walk, 200, 50 + walk, -5);//b
@@ -1056,8 +1049,6 @@ void display13() {
 	glFlush();
 	walk += 1;
 
-
-
 	glFlush();
 	glutSwapBuffers();
 }
@@ -1065,17 +1056,11 @@ void display13() {
 //scene 8 
 void display14() {
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
-
-
-
+	
 	display_rain();
 	display_rain();
-
-
 	glColor3ub(59, 59, 59);
 	rectangle(0, 0, 1000, 200);//land
-
-
 
 	glColor3ub(255, 105, 180);
 	person(25, 300 + walk, 320, 50);//h
@@ -1086,9 +1071,6 @@ void display14() {
 	straight_lines(300 + walk, 200, 350 + walk, 150);//lf
 	glFlush();
 	walk -= 1;
-
-
-
 
 	glFlush();
 	glutSwapBuffers();
@@ -1105,11 +1087,13 @@ void display15() {
 	rectangle(300, 160, 50, 500);//tree bark
 	glColor3ub(0, 128, 0);
 	person(10, 330, 500, 180);//tree leaves
+	
 	//grass 1
 	glColor3ub(0, 128, 0);
 	triangles(20, 170, 20, 250, 50, 170);
 	triangles(50, 170, 65, 250, 80, 170);
 	triangles(80, 170, 110, 250, 110, 170);
+	
 	//grass 2
 	triangles(470, 120, 470, 200, 500, 120);
 	triangles(500, 120, 515, 200, 530, 120);
@@ -1155,11 +1139,13 @@ void display16() {
 	rectangle(300, 160, 50, 500);//tree bark
 	glColor3ub(0, 128, 0);
 	person(10, 330, 500, 180);//tree leaves
+	
 	//grass 1
 	glColor3ub(0, 128, 0);
 	triangles(20, 170, 20, 250, 50, 170);
 	triangles(50, 170, 65, 250, 80, 170);
 	triangles(80, 170, 110, 250, 110, 170);
+	
 	//grass 2
 	triangles(470, 120, 470, 200, 500, 120);
 	triangles(500, 120, 515, 200, 530, 120);
@@ -1205,11 +1191,13 @@ void display17() {
 	rectangle(300, 160, 50, 500);//tree bark
 	glColor3ub(0, 128, 0);
 	person(10, 330, 500, 180);//tree leaves
+	
 	//grass 1
 	glColor3ub(0, 128, 0);
 	triangles(20, 170, 20, 250, 50, 170);
 	triangles(50, 170, 65, 250, 80, 170);
 	triangles(80, 170, 110, 250, 110, 170);
+	
 	//grass 2
 	triangles(470, 120, 470, 200, 500, 120);
 	triangles(500, 120, 515, 200, 530, 120);
@@ -1255,11 +1243,13 @@ void display18() {
 	rectangle(300, 160, 50, 500);//tree bark
 	glColor3ub(0, 128, 0);
 	person(10, 330, 500, 180);//tree leaves
+	
 	//grass 1
 	glColor3ub(0, 128, 0);
 	triangles(20, 170, 20, 250, 50, 170);
 	triangles(50, 170, 65, 250, 80, 170);
 	triangles(80, 170, 110, 250, 110, 170);
+	
 	//grass 2
 	triangles(470, 120, 470, 200, 500, 120);
 	triangles(500, 120, 515, 200, 530, 120);
@@ -1306,11 +1296,13 @@ void display19() {
 	rectangle(300, 160, 50, 500);//tree bark
 	glColor3ub(0, 128, 0);
 	person(10, 330, 500, 180);//tree leaves
+	
 	//grass 1
 	glColor3ub(0, 128, 0);
 	triangles(20, 170, 20, 250, 50, 170);
 	triangles(50, 170, 65, 250, 80, 170);
 	triangles(80, 170, 110, 250, 110, 170);
+	
 	//grass 2
 	triangles(470, 120, 470, 200, 500, 120);
 	triangles(500, 120, 515, 200, 530, 120);
@@ -1356,11 +1348,13 @@ void display20() {
 	rectangle(300, 160, 50, 500);//tree bark
 	glColor3ub(0, 128, 0);
 	person(10, 330, 500, 180);//tree leaves
+	
 	//grass 1
 	glColor3ub(0, 128, 0);
 	triangles(20, 170, 20, 250, 50, 170);
 	triangles(50, 170, 65, 250, 80, 170);
 	triangles(80, 170, 110, 250, 110, 170);
+	
 	//grass 2
 	triangles(470, 120, 470, 200, 500, 120);
 	triangles(500, 120, 515, 200, 530, 120);
@@ -1405,16 +1399,19 @@ void display21() {
 	rectangle(300, 160, 50, 500);//tree bark
 	glColor3ub(0, 128, 0);
 	person(10, 330, 500, 180);//tree leaves
+	
 	//grass 1
 	glColor3ub(0, 128, 0);
 	triangles(20, 170, 20, 250, 50, 170);
 	triangles(50, 170, 65, 250, 80, 170);
 	triangles(80, 170, 110, 250, 110, 170);
+	
 	//grass 2
 	triangles(470, 120, 470, 200, 500, 120);
 	triangles(500, 120, 515, 200, 530, 120);
 	triangles(530, 120, 560, 200, 560, 120);
-   //boy
+	
+  	 //boy
 	glColor3ub(255, 255, 255);//boy colour pink
 	person(30, 280, 200, 40);//head
 	glLineWidth(10);
@@ -1423,6 +1420,7 @@ void display21() {
 	straight_lines(320, 120, 280, 160);//right hand
 	straight_lines(280, 85, 240, 40);//left foot
 	straight_lines(320, 40, 280, 80);//right foot
+	
 	//umbrella
 	glColor3ub(255, 255, 255);
 	semicircle(175, 290, 300, 100);
@@ -1454,11 +1452,13 @@ void display22() {
 	rectangle(300, 160, 50, 500);//tree bark
 	glColor3ub(0, 128, 0);
 	person(10, 330, 500, 180);//tree leaves
+	
 	//grass 1
 	glColor3ub(0, 128, 0);
 	triangles(20, 170, 20, 250, 50, 170);
 	triangles(50, 170, 65, 250, 80, 170);
 	triangles(80, 170, 110, 250, 110, 170);
+	
 	//grass 2
 	triangles(470, 120, 470, 200, 500, 120);
 	triangles(500, 120, 515, 200, 530, 120);
@@ -1473,7 +1473,6 @@ void display22() {
 	straight_lines(320, 120, 290, 160);//right hand
 	straight_lines(290, 85, 240, 40);//left foot
 	straight_lines(320, 40, 290, 80);//right foot
-
 
 	//girl
 	glColor3ub(255, 105, 180);//girl colour pink
@@ -1506,11 +1505,13 @@ void display23() {
 	rectangle(300, 160, 50, 500);//tree bark
 	glColor3ub(0, 128, 0);
 	person(10, 330, 500, 180);//tree leaves
+	
 	//grass 1
 	glColor3ub(0, 128, 0);
 	triangles(20, 170, 20, 250, 50, 170);
 	triangles(50, 170, 65, 250, 80, 170);
 	triangles(80, 170, 110, 250, 110, 170);
+	
 	//grass 2
 	triangles(470, 120, 470, 200, 500, 120);
 	triangles(500, 120, 515, 200, 530, 120);
@@ -1551,11 +1552,13 @@ void display24() {
 	rectangle(300, 160, 50, 500);//tree bark
 	glColor3ub(0, 128, 0);
 	person(10, 330, 500, 180);//tree leaves
+	
 	//grass 1
 	glColor3ub(0, 128, 0);
 	triangles(20, 170, 20, 250, 50, 170);
 	triangles(50, 170, 65, 250, 80, 170);
 	triangles(80, 170, 110, 250, 110, 170);
+	
 	//grass 2
 	triangles(470, 120, 470, 200, 500, 120);
 	triangles(500, 120, 515, 200, 530, 120);
@@ -1570,7 +1573,6 @@ void display24() {
 	straight_lines(360, 120, 290, 150);//right hand
 	straight_lines(290, 85, 240, 40);//left foot
 	straight_lines(320, 40, 290, 80);//right foot
-
 
 	//girl
 	glColor3ub(255, 105, 180);//girl colour pink
@@ -1594,15 +1596,18 @@ void display25() {
 	rectangle(300, 160, 50, 500);//tree bark
 	glColor3ub(0, 128, 0);
 	person(10, 330, 500, 180);//tree leaves
+	
 	//grass 1
 	glColor3ub(0, 128, 0);
 	triangles(20, 170, 20, 250, 50, 170);
 	triangles(50, 170, 65, 250, 80, 170);
 	triangles(80, 170, 110, 250, 110, 170);
+	
 	//grass 2
 	triangles(470, 120, 470, 200, 500, 120);
 	triangles(500, 120, 515, 200, 530, 120);
 	triangles(530, 120, 560, 200, 560, 120);
+	
 	//boy
 	glColor3ub(255, 255, 255);//boy colour pink
 	person(30, 290, 200, 40);//head
@@ -1612,7 +1617,6 @@ void display25() {
 	straight_lines(360, 120, 290, 150);//right hand
 	straight_lines(290, 85, 240, 40);//left foot
 	straight_lines(320, 40, 290, 80);//right foot
-
 
 	//girl
 	glColor3ub(255, 105, 180);//girl colour pink
@@ -1633,13 +1637,10 @@ void display25() {
 void idle() {
 	DWORD start = GetTickCount64();
 	while (GetTickCount64() - start < 1000 / FPS);
-
 	x += dx;
 	y += dy;
-
 	if (x < 0 || x > SCREEN_WIDTH) dx *= -1;
 	if (y < 0 || y > SCREEN_HEIGHT) dy *= -1;
-
 	glutPostRedisplay();
 }
 
@@ -1648,7 +1649,6 @@ void initGL() {
 	glMatrixMode(GL_PROJECTION);
 	glLoadIdentity();
 	gluOrtho2D(0, SCREEN_WIDTH, 0, SCREEN_HEIGHT);
-
 	glPointSize(10.0);
 	glLineWidth(10.0);
 }
@@ -1669,8 +1669,6 @@ int main(int argc, char** argv) {
 	glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA); //Set blending function.
 	init(); // call init function defined above
 	glutIdleFunc(r_idle); //  define what function to call when the program is idle
-	//glutDisplayFunc(display); // define what function to call to draw
-	// the last function in the program puts the program into infinite loop
 	glutMainLoop();
 	initGL();
 
@@ -1823,5 +1821,4 @@ void MyTimerFunc(int value)
 		glutIdleFunc(display25);
 		glutTimerFunc(1000, MyTimerFunc, 25);
 	}
-
 }
