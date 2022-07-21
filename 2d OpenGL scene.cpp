@@ -7,14 +7,12 @@
 #include <iostream>
 
 #define PI 3.141592653
-
-#define SCREEN_WIDTH	700
-#define SCREEN_HEIGHT	700
-#define FPS	30
-
+#define SCREEN_WIDTH 700
+#define SCREEN_HEIGHT 700
+#define FPS 30
 #define RAINSIZE 50
-int winWidth = 700, winHeight = 700;
-int counter = 0;
+
+int winWidth = 700, winHeight = 700, counter = 0;
 time_t t;
 float rotationAngle = 0;
 
@@ -123,6 +121,7 @@ float plane_drift = 0;
 
 void MyTimerFunc(int value);
 
+// create triangle shape
 void triangles(int x, int y, int x1, int y1, int x2, int y2) {
 	glBegin(GL_TRIANGLES);
 	glVertex2i(x, y);
@@ -131,6 +130,7 @@ void triangles(int x, int y, int x1, int y1, int x2, int y2) {
 	glEnd();
 }
 
+// create rectangle shape
 void rectangle(int x, int y, int w, int h) {
 	glBegin(GL_POLYGON);
 	glVertex2i(x, y);
@@ -139,6 +139,7 @@ void rectangle(int x, int y, int w, int h) {
 	glVertex2i(x, y + h);
 	glEnd();
 }
+
 
 void straight_lines(int x1, int y1, int x2, int y2) {
 	glBegin(GL_LINES);
@@ -156,6 +157,7 @@ void person(int n, int x, int y, int r) {
 	}
 	glEnd();
 }
+
 void loveShape(int n, int x, int y, int r) {
 	double inc = 2 * PI / (double)n;
 	glColor3ub(220, 20, 60);
@@ -175,6 +177,7 @@ void semicircle(int n, int x, int y, int r) {
 	glEnd();
 }
 
+// create cloud move
 void cloud_move() {
 	cloud1 += .1;
 	if (cloud1 > 700) {
@@ -1389,6 +1392,7 @@ void display20() {
 	glFlush();
 	glutSwapBuffers();
 }
+
 void display21() {
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 	rectangle(0, 200, 700, 700); //size of the background
@@ -1493,8 +1497,8 @@ void display22() {
 	walk -= 1;
 	glFlush();
 	glutSwapBuffers();
-
 }
+
 void display23() {
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 	rectangle(0, 200, 700, 700); //size of the background
@@ -1586,6 +1590,7 @@ void display24() {
 	glFlush();
 	glutSwapBuffers();
 }
+
 void display25() {
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 	glColor3ub(135, 206, 250); //color of the sky
